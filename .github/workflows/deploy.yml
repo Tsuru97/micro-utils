@@ -1,0 +1,32 @@
+name: Deploy to Production (aaPanel)
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy via SSH to aaPanel
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Execute remote SSH commands
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /www/wwwroot/micro-utils.com
+            git config --global --add safe.directory /www/wwwroot/micro-utils.com
+            git pull origin main
+            composer install --no-dev --optimize-autoloader
+            php artisan migrate --force
+            npm install
+            npm run build
+            php artisan config:cache
+            php artisan route:cache
+            php artisan view:cache
+            php artisan optimize
+            chown -R www:www /www/wwwroot/micro-utils.com || true

@@ -1,0 +1,43 @@
+<?php
+return [
+    'home_hub' => 'Inicio',
+    'categories' => 'Categorías',
+    'search_placeholder' => 'Buscar una herramienta (ej: contador de palabras)...',
+    'search_button' => 'Buscar',
+    'hero_title' => 'El Hub de Micro-Herramientas Digitales',
+    'hero_subtitle' => 'Encuentra las herramientas rápidas y útiles que necesitas para tu trabajo diario. Desde desarrollo web hasta SEO y finanzas.',
+    'explore_tools' => 'Explorar Herramientas',
+    'all_categories' => 'Todas las Categorías',
+    'tools_count' => ':count herramientas',
+    
+    'how_it_works' => 'Cómo Funciona',
+    'how_it_works_subtitle' => 'MicroUtils ofrece resultados instantáneos ejecutando algoritmos directamente en tu navegador. Tus datos nunca salen de tu computadora.',
+    'step_1_title' => 'Elige una Herramienta',
+    'step_1_desc' => 'Encuentra la utilidad perfecta para tu texto, código o datos de nuestra creciente colección.',
+    'step_2_title' => 'Ingresa tus Datos',
+    'step_2_desc' => 'Pega tu contenido de forma segura. Todo se procesa localmente para garantizar la máxima privacidad.',
+    'step_3_title' => 'Obtén Resultados',
+    'step_3_desc' => 'Copia el texto formateado, descarga el archivo o analiza las métricas en tiempo real.',
+    
+    'faq_title' => 'Preguntas Frecuentes',
+    'faq_subtitle' => 'Encuentra respuestas a preguntas comunes sobre MicroUtils, privacidad y uso.',
+    'faq_1_question' => '¿Son seguros mis datos?',
+    'faq_1_answer' => 'Sí, absolutamente. La mayoría de nuestras herramientas se ejecutan en tu navegador usando JavaScript. Esto significa que tu texto o código nunca toca nuestros servidores. Valoramos tu privacidad.',
+    'faq_2_question' => '¿Estas herramientas son gratuitas?',
+    'faq_2_answer' => '¡Sí! MicroUtils está construido como un recurso gratuito para desarrolladores, redactores y estudiantes. Puedes usar todas las utilidades sin límites ni cuotas ocultas.',
+    'faq_3_question' => '¿Puedo usar MicroUtils en mi celular?',
+    'faq_3_answer' => 'Definitivamente. Nuestra plataforma es completamente responsiva y está diseñada para funcionar sin problemas en computadoras de escritorio, tablets y dispositivos móviles.',
+    'faq_4_question' => '¿Necesito crear una cuenta?',
+    'faq_4_answer' => 'No es necesario tener una cuenta para usar las herramientas. Sin embargo, crear una cuenta podría desbloquear funciones premium o permitirte guardar tus preferencias en el futuro.',
+    
+    'footer_about' => 'Acerca de MicroUtils',
+    'footer_about_desc' => 'Tu hub integral para utilidades web de alto rendimiento y privacidad. Construido para la velocidad y la productividad.',
+    'footer_legal' => 'Legal',
+    'privacy_policy' => 'Política de Privacidad',
+    'terms_of_service' => 'Términos de Servicio',
+    'contact_us' => 'Contáctanos',
+
+    'back_to_hub' => 'Volver al Inicio',
+    'no_tools_found' => 'No hay herramientas',
+    'adding_more_tools' => 'Pronto agregaremos más herramientas a esta categoría.',
+];

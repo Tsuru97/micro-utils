@@ -1,0 +1,43 @@
+<?php
+return [
+    'home_hub' => 'Home',
+    'categories' => 'Categories',
+    'search_placeholder' => 'Search for a tool (e.g. word counter)...',
+    'search_button' => 'Search',
+    'hero_title' => 'The Digital Micro-Tools Hub',
+    'hero_subtitle' => 'Find the fast and useful tools you need for your daily work. From web development to SEO and finance.',
+    'explore_tools' => 'Explore Tools',
+    'all_categories' => 'All Categories',
+    'tools_count' => ':count tools',
+    
+    'how_it_works' => 'How it Works',
+    'how_it_works_subtitle' => 'MicroUtils provides instant results by running algorithms directly in your browser. No data leaves your computer.',
+    'step_1_title' => 'Choose a Tool',
+    'step_1_desc' => 'Find the perfect utility for your text, code, or data from our growing collection.',
+    'step_2_title' => 'Input your Data',
+    'step_2_desc' => 'Paste your content securely. Everything is processed locally to ensure maximum privacy.',
+    'step_3_title' => 'Get Instant Results',
+    'step_3_desc' => 'Copy the formatted text, download the file, or analyze the metrics in real-time.',
+    
+    'faq_title' => 'Frequently Asked Questions',
+    'faq_subtitle' => 'Find answers to common questions about MicroUtils, privacy, and usage.',
+    'faq_1_question' => 'Is my data secure?',
+    'faq_1_answer' => 'Yes, absolutely. Most of our tools run entirely in your browser using JavaScript. This means your text, code, or data never touches our servers. We value your privacy.',
+    'faq_2_question' => 'Are these tools free to use?',
+    'faq_2_answer' => 'Yes! MicroUtils is built as a free, open resource for developers, writers, and students. You can use all our basic utilities without any limits or hidden fees.',
+    'faq_3_question' => 'Can I use MicroUtils on my phone?',
+    'faq_3_answer' => 'Definitely. Our platform is fully responsive and designed to work seamlessly on desktops, tablets, and mobile devices.',
+    'faq_4_question' => 'Do I need to create an account?',
+    'faq_4_answer' => 'No account is required to use the tools. However, creating an account might unlock premium features or allow you to save your preferences in the future.',
+    
+    'footer_about' => 'About MicroUtils',
+    'footer_about_desc' => 'Your all-in-one hub for high-performance, privacy-first web utilities. Built for speed and productivity.',
+    'footer_legal' => 'Legal',
+    'privacy_policy' => 'Privacy Policy',
+    'terms_of_service' => 'Terms of Service',
+    'contact_us' => 'Contact Us',
+
+    'back_to_hub' => 'Back to Hub',
+    'no_tools_found' => 'No tools found',
+    'adding_more_tools' => 'We are currently adding more tools to this category.',
+];
