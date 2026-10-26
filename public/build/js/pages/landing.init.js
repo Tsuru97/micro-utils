@@ -10,7 +10,7 @@ File: landing Js File
 function windowScroll() {
     var navbar = document.getElementById("navbar");
     if (navbar) {
-        if (window.scrollY >= 50 || document.documentElement.scrollTop >= 50) {
+        if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
             navbar.classList.add("is-sticky");
         } else {
             navbar.classList.remove("is-sticky");
@@ -38,12 +38,9 @@ if (navLinks && menuToggle) {
         });
         if (windowSize < 980) {
             Array.from(navLinks).forEach((link) => {
-                // Prevent dropdown toggles from closing the menu
-                if (!link.classList.contains('dropdown')) {
-                    link.addEventListener('click', () => {
-                        toggleMenu();
-                    });
-                }
+                link.addEventListener('click', () => {
+                    toggleMenu();
+                });
             });
         } else {
             toggleMenu();
@@ -60,6 +57,28 @@ function toggleMenu() {
     }
 }
 
+// trusted-client-slider
+var swiper = new Swiper(".trusted-client-slider", {
+    spaceBetween: 30,
+    loop: 'true',
+    slidesPerView: 1,
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        576: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        1024: {
+            slidesPerView: 4,
+        },
+    },
+});
+
 // pricing
 function check() {
     var checkBox = document.getElementById("plan-switch");
@@ -75,10 +94,27 @@ function check() {
             annual[i].style.display = "none";
             mon.style.display = "block";
         }
-        i++;
+        i ++;
     });
 }
 check();
+
+// client-review-swiper
+var swiper = new Swiper(".client-review-swiper", {
+    loop: false,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        clickable: true,
+        el: ".swiper-pagination",
+    },
+});
 
 // counter-value
 function counter() {
@@ -118,7 +154,7 @@ counter();
 //
 /********************* scroll top js ************************/
 //
-/**
+
 var myButton = document.getElementById("back-to-top");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -139,4 +175,3 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-*/
