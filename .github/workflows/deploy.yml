@@ -21,6 +21,8 @@ jobs:
             cd /www/wwwroot/micro-utils.com
             git config --global --add safe.directory /www/wwwroot/micro-utils.com
             git pull origin main
+            mkdir -p storage/framework/cache/data storage/framework/sessions storage/framework/views storage/framework/testing storage/logs storage/app/public
+            chmod -R 775 storage bootstrap/cache
             composer install --no-dev --optimize-autoloader
             php artisan migrate --force
             npm install
